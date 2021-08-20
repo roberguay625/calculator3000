@@ -1,10 +1,10 @@
 print("que quieres hacer maricon?")
 
-pregunta = input("Sumar, resta, multiplicar, dividir")
+pregunta = input("Sumar, restar, multiplicar, dividir: ").lower()
 
-numero1 = int(input("mete un numero negro"))
+numero1 = int(input("mete un numero negro: "))
 
-numero2 = int(input("mete otro numero negro"))
+numero2 = int(input("mete otro numero negro: "))
 
 def sumar (num1, num2): 
     return num1 + num2
@@ -18,17 +18,17 @@ def dividir (num1, num2):
 def restar (num1, num2):
     return num1 - num2
 
-if pregunta == "Sumar":
-   print(sumar (numero1, numero2))
+if pregunta == "sumar":
+   print(sumar(numero1, numero2))
 
-elif pregunta == "Restar":
-    print(restar (numero1, numero2))
+elif pregunta == "restar":
+    print(restar(numero1, numero2))
 
-elif pregunta == "Dividir":
-    print(dividir (numero1, numero2))
+elif pregunta == "dividir":
+    print(dividir(numero1, numero2))
 
-elif pregunta == "Multiplicar":
-    print(multiplicar (numero1, numero2))
+elif pregunta == "multiplicar":
+    print(multiplicar(numero1, numero2))
 
 else:
-    print("tu que eres tonto")
+    print("tu que eres tonto?")
